@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu page</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="all.css">
+    <script src="cart.js"></script>
+
+
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <section class="flex">
+
+        <input type="checkbox" name="cb" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">laziz<span>.restro</span></a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="menu.html">menu</a>
+            <a href="review.html">review</a>
+            <a href="contact.html">contact</a>
+        </nav>
+
+        <main class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </main>
+
+    </section>
+
+</header>
+
+<!-- prodcuts section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> Our <span>Menu</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+
+            <div class="image">
+                <img src="images/kebab.jpg" alt="">
+                <div class="product" id="product1">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" onclick="addToCart('Chiken Kebab', 7.99)">Add to Cart</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Chicken Kebab</h3>
+                <div class="price"> &#163;7.99  </div>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/tikka.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" onclick="addToCart('Chiken tikka', 9.99)">Add to Cart</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Chicken Tikka</h3>
+                <div class="price"> &#163;9.99  </div>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/biryani.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" onclick="addToCart('Biryani', 12.99)">Add to Cart</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Biryani</h3>
+                <div class="price"> &#163;12.99  </div>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/friedrice.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" onclick="addToCart('Egg Fried Rice', 7.99)">Add to Cart</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Egg Fried Rice</h3>
+                <div class="price"> &#163;7.99  </div>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/butter.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" onclick="addToCart('Butter Chicken', 11.99)">Add to Cart</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Butter Chicken</h3>
+                <div class="price"> &#163;11.99  </div>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/tikkam.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" onclick="addToCart('Tikka Masala', 11.99)">Add to Cart</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Tikka Masala</h3>
+                <div class="price"> &#163;11.99  </div>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/paneer.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" onclick="addToCart('Paneer Masala', 11.99)">Add to Cart</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Paneer Masala</h3>
+                <div class="price"> &#163;11.99  </div>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/palak.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" onclick="addToCart('Palak Paneer', 11.99)">Add to Cart</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Palak Paneer</h3>
+                <div class="price"> &#163;11.99  </div>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/roti.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" onclick="addToCart('Roti/Naan', 2.50)">Add to Cart</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Roti/Naan</h3>
+                <div class="price"> &#163;2.50  </div>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/oreo.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" onclick="addToCart('Milkshake',4.99)">Add to Cart</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Milkshake</h3>
+                <div class="price"> &#163;4.99  </div>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/brownie.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" onclick="addToCart('Brownie', 6.99)">Add to Cart</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Brownie</h3>
+                <div class="price"> &#163;6.99  </div>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/icecream.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <button class="cart-btn" onclick="addToCart('Ice Cream', 2.99)">Add to Cart</button>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Ice Cream</h3>
+                <div class="price"> &#163;2.99  </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="prodcuts" id="products">
+
+    <h1 class="heading"> your <span>order</span> </h1>
+<center>
+    <div class="cart">
+        <h2 style="color: #333;"> Cart</h2>
+        <table id="cartItems">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Cart items will be displayed here -->
+            </tbody>
+        </table>
+        <p>Total: $<span id="cartTotal">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+ </center>
+ 
+</section>
+
+<!-- prodcuts section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="home.html">home</a>
+            <a href="about.html">about</a>
+            <a href="menu.html">menu</a>
+            <a href="review.html">review</a>
+            <a href="contact.html">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">Surat,india</a>
+            <a href="#">London,Uk</a>
+            <a href="#">Manchester,uk</a>
+            <a href="#">Ahemdabad,india</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">+044-123-456-7890(uk)</a>
+            <a href="#">+091-123-456-7890(ind)</a>
+            <a href="#">laziz.uk@gmail.com</a>
+            <a href="#">laziz.ind@gmail.com</a>
+            <img src="images/payment.png" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- footer section ends -->
+</body>
+</html>
